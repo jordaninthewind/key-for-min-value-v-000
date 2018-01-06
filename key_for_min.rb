@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   reference = nil
-  name_hash.collect do | key, val |
+  name_hash.each do | key, val |
     if reference == nil
       reference = key
     else
@@ -14,8 +14,8 @@ def key_for_min_value(name_hash)
   end
   return reference
 end
-#
-#
+
+
 # def key_for_min_value(name_hash)
 #   reference = nil
 #   lowest = nil
