@@ -4,6 +4,7 @@
 def key_for_min_value(name_hash)
   reference = nil
   name_hash.each do | key, val |
+    p reference
     if reference == nil
       reference = key
     else
