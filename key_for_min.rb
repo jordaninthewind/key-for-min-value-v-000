@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
     p reference
     if reference == nil
       reference = key
-    elsif name_hash[reference] < val
+    elsif val < name_hash[reference]
       reference = key
     end
   end
