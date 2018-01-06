@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   name_hash.collect do | key, val |
     if reference == nil
       reference = key
-      lowest = value
+      lowest = val
     else
       if val < lowest
         reference = key
