@@ -5,6 +5,7 @@ def key_for_min_value(name_hash)
   reference = nil
   name_hash.each do | key, val |
     p name_hash[key]
+    p val
     if reference == nil
       reference = key
     elsif name_hash[reference] < val
